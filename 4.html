@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>
+            total cost
+        </title>
+        <script type = text/javaScript src="frtchk.js">
+    </head>
+    <body>
+        <form action="">
+            <h3>first order for using checkbox</h3>
+            <input type="checkbox" id=apple name=apple/> Apple
+             <input type="checkbox" id=orange name=orange/> orange
+              <input type="checkbox" id=banana name=banana/> banana
+              <p>
+                <label>tax</label>
+                <input onclick="total();" id=tax  onfocus="this.blur();"/>
+              </p>
+              <p>
+                <input type=button value="total cost" onclick="total();"/>
+              </p>
+              <p><input type=submit value="submit order"/>
+              <input type=rest value="clear order"/>
+              </p>
+
+        </form>
+    </body>
+</html>
+function total()
+{
+    var x= document.getElementById("apple").checked;
+    var y= document.getElementById("orange").checked;
+    var z= document.getElementById("banana").checked;
+}if(x==true)
+{
+    sum=59;
+
+}
+else
+{
+    sum=0;
+}
+apple=sum;
+if(y==true)
+{
+    sum1=49;
+
+}
+else{
+    sum1=0;
+}
+orange=sum1;
+f(y==true)
+{
+    sum2=39;
+
+}
+else{
+    sum2=0;
+}
+banana=sum2;
+var sum1 = apple+orange+banabna;
+var tax1= document.getElementById("tax").value=sum1*5/100;
+ var totalcost=sum+tax1;
+ document.getElementById("cost").value=totalcost;
+ alert("your total is:"+totalcost);
+
+</script>
